@@ -19,7 +19,6 @@ var fatsecretDetailsSchema = new Schema({
     sod:{type: String, required : true},
     fibr:{type: String, required : true},
     sugr:{type: String, required : true},
-    vita:{type: String, required : true},
 });
 
 module.exports = mongoose.model('fatsecretDetails',fatsecretDetailsSchema,"fatsecretDetails");

@@ -263,7 +263,6 @@ function getTotals(arrayData){
         let sodTotal = arrayData.filter(x=>x['sod']).map(x=>x && x['sod']).filter(Boolean).map(x=>x && x.replace(/[^\d.-]/g, '')).map(x=>Number(x)).reduce((a, b) => a + b, 0)
         let fibrTotal = arrayData.filter(x=>x['fibr']).map(x=>x && x['fibr']).filter(Boolean).map(x=>x && x.replace(/[^\d.-]/g, '')).map(x=>Number(x)).reduce((a, b) => a + b, 0)
         let sugrTotal = arrayData.filter(x=>x['sugr']).map(x=>x && x['sugr']).filter(Boolean).map(x=>x && x.replace(/[^\d.-]/g, '')).map(x=>Number(x)).reduce((a, b) => a + b, 0)
-        let vitaTotal = arrayData.filter(x=>x['vita']).map(x=>x && x['vita']).filter(Boolean).map(x=>x && x.replace(/[^\d.-]/g, '')).map(x=>Number(x)).reduce((a, b) => a + b, 0)
         returnArr.push({
             label:"Calorie",
             quantity:calTotal,
@@ -299,11 +298,7 @@ function getTotals(arrayData){
             quantity:sugrTotal,
             extValue:"g"
         })
-        returnArr.push({
-            label:"Vitamin",
-            quantity:vitaTotal,
-            extValue:"g"
-        })
+   
         returnArr = returnArr.filter(x=>x['quantity'])
     }
     return returnArr
