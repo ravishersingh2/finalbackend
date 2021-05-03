@@ -227,11 +227,12 @@ router.post('/getWeekWiseData', function(req, res) {
         }]
 
         let finalData = []
+        finalData.sort()
         if(user['totals'] && Array.isArray(user['totals']) && user['totals'].length > 0){
             totals.forEach(x=>{
                 user['totals'].forEach(y=>{
                     if(x['label'] === y['label']){
-                        finalData.sort().push({
+                        finalData.push({
                             label:y['label'],
                             totals:getTotals(y['totals'])
                         }) 
