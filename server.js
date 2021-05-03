@@ -232,6 +232,7 @@ router.post('/getWeekWiseData', function(req, res) {
             totals.forEach(x=>{
                 user['totals'].forEach(y=>{
                     if(x['label'] === y['label']){
+                        finalData.sort(x,y)
                         finalData.push({
                             label:y['label'],
                             totals:getTotals(y['totals'])
@@ -267,7 +268,6 @@ router.post('/getWeekWiseData', function(req, res) {
                 finalData = totals
             }
         }
-        finalData.sort()
         res.json({data:finalData});
     });
 });
