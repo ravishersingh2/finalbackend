@@ -205,7 +205,7 @@ router.post('/getWeekWiseData', function(req, res) {
         var today = new Date();
         var dd = String(today.getDate()).padStart(2, '0');
         let totals = [{
-            label: dd
+            label: "2021-04-01"
         }]
         let finalData = []
         if(user['totals'] && Array.isArray(user['totals']) && user['totals'].length > 0){
