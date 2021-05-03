@@ -239,7 +239,6 @@ router.post('/getWeekWiseData', function(req, res) {
                 })
             })
             let totalDay = JSON.parse(JSON.stringify(totals)).map(x=>x['label'])
-            totalDay.sort();
             let usertotalDay = JSON.parse(JSON.stringify(user['totals'])).map(x=>x['label'])
             let notIn = totalDay.filter(x=>!usertotalDay.includes(x))
             let notInReverse = usertotalDay.filter(x=>!totalDay.includes(x))
