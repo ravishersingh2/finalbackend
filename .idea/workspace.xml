@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7f16e983-8e6f-46a5-b53f-acddd6aabede" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/testcollection.js" beforeDir="false" afterPath="$PROJECT_DIR$/Test/testcollection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +71,8 @@
       <workItem from="1615703747318" duration="3225000" />
       <workItem from="1616477188056" duration="19847000" />
       <workItem from="1619757696935" duration="1063000" />
-      <workItem from="1620053051570" duration="4164000" />
+      <workItem from="1620053051570" duration="5579000" />
+      <workItem from="1620075148745" duration="964000" />
     </task>
     <task id="LOCAL-00001" summary="new">
       <created>1615586276089</created>
@@ -134,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620055712384</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Include 'savefatsecretDetails', Rm useless code, fix comments">
+      <created>1620057992522</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1620057992522</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
