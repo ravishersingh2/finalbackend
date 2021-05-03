@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f16e983-8e6f-46a5-b53f-acddd6aabede" name="Default Changelist" comment="latest push" />
+    <list default="true" id="7f16e983-8e6f-46a5-b53f-acddd6aabede" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +22,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CSCI3916_HW4" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -29,6 +31,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Space\AppData\Roaming\SPB_Data\finalbackend" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -62,6 +69,7 @@
       <workItem from="1615703747318" duration="3225000" />
       <workItem from="1616477188056" duration="19847000" />
       <workItem from="1619757696935" duration="1063000" />
+      <workItem from="1620053051570" duration="4164000" />
     </task>
     <task id="LOCAL-00001" summary="new">
       <created>1615586276089</created>
@@ -119,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616691397191</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Include 'savefatsecretDetails', Rm useless code, fix comments">
+      <created>1620055712384</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1620055712384</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +156,7 @@
     <MESSAGE value="new" />
     <MESSAGE value="new1" />
     <MESSAGE value="latest push" />
-    <option name="LAST_COMMIT_MESSAGE" value="latest push" />
+    <MESSAGE value="Include 'savefatsecretDetails', Rm useless code, fix comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Include 'savefatsecretDetails', Rm useless code, fix comments" />
   </component>
 </project>

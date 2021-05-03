@@ -2,7 +2,7 @@
  * Created by shawnmccarthy on 1/22/17.
  */
 'use strict;';
-//Include crypto to generate the movie id
+
 var crypto = require('crypto');
 module.exports = function () {
     return {
@@ -16,7 +16,7 @@ module.exports = function () {
             return 1;
         },
         /*
-         * Retrieve a movie with a given id or return all the movies if the id is undefined.
+         * Retrieve based on id.
          */
         find: function (id) {
             if (id) {
@@ -39,7 +39,7 @@ module.exports = function () {
             }
         },
         /*
-         * Delete a movie with the given id.
+         * Delete item with the given id.
          */
         remove: function (id) {
             var found = 0;
