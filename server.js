@@ -250,6 +250,7 @@ router.post('/getWeekWiseData', function(req, res) {
                 })
                 
             })
+            
             notInReverse.forEach(x=>{
                 user['totals'].forEach(y=>{
                     if(x === y['label']){
@@ -260,6 +261,7 @@ router.post('/getWeekWiseData', function(req, res) {
                     }
                 })
             })
+            finalData.sort()
         }else{
             if(totals && Array.isArray(totals) && totals.length > 0){
                 finalData = totals
