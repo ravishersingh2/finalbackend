@@ -245,7 +245,7 @@ router.post('/getWeekWiseData', function(req, res) {
             let notInReverse = usertotalDay.filter(x=>!totalDay.includes(x))
             notIn.forEach(x=>{
                 finalData.push({
-                    label:x.sort()
+                    label:x
                 })
                 
             })
