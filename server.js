@@ -1,7 +1,7 @@
 /*
 CSC3916 HW2
 File: Server.js
-Description: Web API scaffolding for Movie API
+Description: Web API scaffolding for Food API
  */
 
 let envPath = __dirname + "/.env"
@@ -9,7 +9,6 @@ require('dotenv').config({path:envPath});
 var express = require('express');
 var bodyParser = require('body-parser');
 var passport = require('passport');
-var authController = require('./auth');
 var authJwtController = require('./auth_jwt');
 var jwt = require('jsonwebtoken');
 var cors = require('cors');
@@ -87,6 +86,22 @@ router.post('/getFatSecretDetails', function(req, res) {
         if (err) res.send(err);
         // return that user
         res.json({data:user});
+    });
+});
+
+router.post('/saveFatSecretDetails', function(req, res) {
+    var nutrition = new fatsecretDetails
+    nutrition.food = req.body.food
+    nutrition.cal = req.body.cal
+    nutrition.carb = req.body.carb
+    nutrition.prot = req.body.prot
+    nutrition.fat = req.body.fat
+    nutrition.sod = req.body.sod
+    nutrition.fibr = req.body.fibr
+    nutrition.sugr = req.body.sugr
+
+    nutrition.save(function(err, user) {
+        if (err) res.send(err);
     });
 });
 
