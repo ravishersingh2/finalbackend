@@ -202,17 +202,9 @@ router.post('/getWeekWiseData', function(req, res) {
     User.findById(req.body.userId, function(err, user) {
         if (err) res.send(err);
         // return that user
-        let totals = [{
-            label:"2021-04-01"
-        },{
-            label:"2021-04-02"
-        },{
-            label:"2021-04-03"
-        },{
-            label:"2021-04-04"
-        },{
-            label:"2021-04-05"
-        }]
+        let totals = {
+            label:getDay()
+        }
         let finalData = []
         if(user['totals'] && Array.isArray(user['totals']) && user['totals'].length > 0){
             totals.forEach(x=>{
