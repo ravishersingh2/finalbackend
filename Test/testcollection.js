@@ -16,7 +16,7 @@ let login_details = {
 }
 
 let nutrition_details = {
-    food : 'Rock (100g) Safeway',
+    food: 'Rock (100g) Safeway',
     cal : '111',
     carb: '12',
     prot: '23',
