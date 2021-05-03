@@ -261,12 +261,13 @@ router.post('/getWeekWiseData', function(req, res) {
                     }
                 })
             })
-            finalData.sort()
+            
         }else{
             if(totals && Array.isArray(totals) && totals.length > 0){
                 finalData = totals
             }
         }
+        finalData.sort()
         res.json({data:finalData});
     });
 });
