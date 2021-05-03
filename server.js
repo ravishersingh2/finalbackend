@@ -204,8 +204,11 @@ router.post('/getWeekWiseData', function(req, res) {
         // return that user
         var today = new Date();
         var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0');
+        var yyyy = today.getFullYear();
+        var current = yyyy + '-' + mm + '-' + dd;
         let totals = [{
-            label: "2021-04-01"
+            label: current
         }]
         let finalData = []
         if(user['totals'] && Array.isArray(user['totals']) && user['totals'].length > 0){
