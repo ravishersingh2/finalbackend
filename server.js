@@ -321,7 +321,7 @@ function getTotals(arrayData){
             extValue:"g"
         })
         returnArr.push({
-            label:"Fibre",
+            label:"Fiber",
             quantity:fibrTotal.toFixed(1),
             extValue:"g"
         })
