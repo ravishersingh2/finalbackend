@@ -303,37 +303,37 @@ function getTotals(arrayData){
         // let vitaTotal = arrayData.filter(x=>x['vita']).map(x=>x && x['vita']).filter(Boolean).map(x=>x && x.replace(/[^\d.-]/g, '')).map(x=>Number(x)).reduce((a, b) => a + b, 0)
         returnArr.push({
             label:"Calorie",
-            quantity:calTotal,
+            quantity:calTotal.toFixed(1),
             extValue:"kcal"
         })
         returnArr.push({
             label:"Carbs",
-            quantity:carbTotal,
+            quantity:carbTotal.toFixed(1),
             extValue:"g"
         })
         returnArr.push({
             label:"Protein",
-            quantity:protTotal,
+            quantity:protTotal.toFixed(1),
             extValue:"g"
         })
         returnArr.push({
             label:"Fat",
-            quantity:fatTotal,
+            quantity:fatTotal.toFixed(1),
             extValue:"g"
         })
         returnArr.push({
             label:"Sodium",
-            quantity:sodTotal,
+            quantity:sodTotal.toFixed(1),
             extValue:"g"
         })
         returnArr.push({
             label:"Fibre",
-            quantity:fibrTotal,
+            quantity:fibrTotal.toFixed(1),
             extValue:"g"
         })
         returnArr.push({
             label:"Sugar",
-            quantity:sugrTotal,
+            quantity:sugrTotal.toFixed(1),
             extValue:"g"
         })
    
