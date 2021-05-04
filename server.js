@@ -90,30 +90,24 @@ router.post('/getFatSecretDetails', function(req, res) {
 });
 
 router.post('/saveFatSecretDetails', function(req, res) {
-    if(!req.body.name || !req.body.cal) {
-        res.json({success: false, message: 'Request must include a food name and calories.'});
-    }
-    else {
 
-        var nutrition = new fatsecretDetails
-        nutrition.food = req.body.food
-        nutrition.cal = req.body.cal
-        nutrition.carb = req.body.carb
-        nutrition.prot = req.body.prot
-        nutrition.fat = req.body.fat
-        nutrition.sod = req.body.sod
-        nutrition.fibr = req.body.fibr
-        nutrition.sugr = req.body.sugr
+    var nutrition = new fatsecretDetails
+    nutrition.food = req.body.food
+    nutrition.cal = req.body.cal
+    nutrition.carb = req.body.carb
+    nutrition.prot = req.body.prot
+    nutrition.fat = req.body.fat
+    nutrition.sod = req.body.sod
+    nutrition.fibr = req.body.fibr
+    nutrition.sugr = req.body.sugr
 
-        nutrition.save(function (err, user) {
-            if (err) {
-                res.send(err);
-            }
-            else {
-                res.json({success: true, message: 'New food has been saved.'})
-            }
-        });
-    }
+    nutrition.save(function (err, user) {
+        if (err) {
+            res.send(err);
+        } else {
+            res.json({success: true, message: 'New food has been saved.'})
+        }
+    });
 });
 
 router.post('/getEachDayData', function(req, res) {

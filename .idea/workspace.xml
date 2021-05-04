@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7f16e983-8e6f-46a5-b53f-acddd6aabede" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/testcollection.js" beforeDir="false" afterPath="$PROJECT_DIR$/Test/testcollection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +71,7 @@
       <workItem from="1616477188056" duration="19847000" />
       <workItem from="1619757696935" duration="1063000" />
       <workItem from="1620053051570" duration="5579000" />
-      <workItem from="1620075148745" duration="964000" />
+      <workItem from="1620075148745" duration="3995000" />
     </task>
     <task id="LOCAL-00001" summary="new">
       <created>1615586276089</created>
@@ -144,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620057992522</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="basic error checking new food">
+      <created>1620081408951</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1620081408951</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +173,7 @@
     <MESSAGE value="new1" />
     <MESSAGE value="latest push" />
     <MESSAGE value="Include 'savefatsecretDetails', Rm useless code, fix comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Include 'savefatsecretDetails', Rm useless code, fix comments" />
+    <MESSAGE value="basic error checking new food" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic error checking new food" />
   </component>
 </project>
